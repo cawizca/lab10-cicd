@@ -1,7 +1,5 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: "2022-05-14T20:31:42Z"
   generation: 1
   labels:
     app: sliit-lab-10
@@ -34,6 +32,8 @@ spec:
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
+          ports:
+            - containerPort: 8090
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
