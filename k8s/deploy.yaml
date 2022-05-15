@@ -5,8 +5,6 @@ metadata:
     app: sliit-lab-10
   name: sliit-lab-10
   namespace: default
-  resourceVersion: "592"
-  uid: 355492e1-d1a1-41bd-9505-85ff75fcffa0
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -26,7 +24,7 @@ spec:
         app: sliit-lab-10
     spec:
       containers:
-        - image: cawizca/sliit-lab-10:d63af8cee766b1ff0442acff053ef0b56caf2267
+        - image: cawizca/sliit-lab-10
           imagePullPolicy: Always
           name: sliit-lab-10
           resources: {}
